@@ -32,7 +32,7 @@ const Contact = () => {
   ]
 
   return (
-    <div id='Contact' className='text-white h-screen sm:h-full sm:mb-[200px] mb-[100px]  w-full  mt-[100px]'>
+    <div id='Contact' className='text-white h-screen sm:h-full sm:mb-[200px] mb-[50px]  w-full  mt-[100px]'>
       <div className="max-w-screen-lg flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6 mx-auto w-full ">
      
         <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold  mb-9 border-b-4 py-2 border-gray-500 leading-9 w-full ">Contact</h1> 
@@ -41,12 +41,12 @@ const Contact = () => {
                 {
                   contact.map(({id,invite,logo,link}) => {
                   return (
-                    <div key={id} className={`bg-black-gradient hover:bg-none transition-[400ms] md:border-r md:border-b- lg:h-[250px] sm:h-[200px] h-[130px] border-b w-full rounded-md justify-center items-center flex  gap-3 shadow-lg flex-col `}>
-                      <div  className="flex items-center">
-                        <h2 className={`lg:text-2xl sm:text-xl text-[16px] font-bold text-center ${id === 2 ? "text-gradient" : "text-white"} ${id === 4 ? "text-gradient" : "text-white"}`}>{invite}</h2>
+                    <div key={id} className={`bg-black-gradient hover:bg-none transition-[400ms] md:border-r md:border-b- lg:h-[250px] sm:h-[200px] h-[100px] border-b w-full rounded-md md:justify-center items-center flex  gap-3 shadow-lg md:flex-col justify-between `}>
+                      <div  className="flex items-center ">
+                        <h2 className={`lg:text-2xl sm:text-xl text-[16px] md:px-0 pl-4 font-bold text-center ${id === 2 ? "text-gradient" : "text-white"} ${id === 4 ? "text-gradient" : "text-white"}`}>{invite}</h2>
                         
                       </div>
-                      <a target="_blank" rel="noreferrer" className="bg-blue-gradient hover:scale-110 transition text-black rounded-lg p-3 cursor-pointer" href={link}>{logo}</a>
+                      <a target="_blank" rel="noreferrer" className="bg-blue-gradient hover:scale-110 transition text-black rounded-lg p-3  cursor-pointer" href={link}>{logo}</a>
                     </div>
 
                   )
