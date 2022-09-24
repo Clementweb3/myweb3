@@ -1,13 +1,174 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --bg-color:#050614 ;
+  --primary-color:#01ffd5;
+  --secondary-color:#03aaf7;
+  --dark-blue:#1d3853;
+  --black:#1e1f1e;
+  --primary-white:#fafcfc;
+  /* --bg-color:#192841; */
+  --transition: all 400ms ease;
+  --third-color:#8cf6fa;
+  --fourth-color:#defaf9;
+  --gradient: linear-gradient(to right top, #f5fff8 ,#01baef);
+  --blue-gradient:linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body{
+  background-color: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+
+  
+
+  --circle-grad: 
+  radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #defaf9 0.89%,
+    #bef5f0 17.23%,
+    #8cf6fa 42.04%,
+    #6bf2fc 55.12%,
+    #3bf5ec 71.54%,
+    #01dfef 100%
+  );
+  ;
+
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-none{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+}
+
+
+.bg-circle-gradient{
+  background: -webkit-radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #defaf9 0.89%,
+    #bef5f0 17.23%,
+    #8cf6fa 42.04%,
+    #6bf2fc 55.12%,
+    #3bf5ec 71.54%,
+    #01dfef 100%
+  );
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+
+.text-gradient{
+  background: linear-gradient(to right,
+  var(--primary-color),var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #7a7373 -78.47%,
+    #010514 91.61%
+  );
+}
+
+
+nav li{
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: white;
+  
+}
+
+nav li:hover,
+nav li:active{
+  background: var(--blue-gradient);
+  color:black;
+}
+
+
+
+
+.animate{
+  overflow: hidden;
+}
+
+.animate::before{
+  content: "";
+  position: absolute;
+  inset: -10px -1px;
+  background: linear-gradient(315deg,#43f5dd,#2c7df7);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+
+}
+
+
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.circle{
+  background-color: #01dfef;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+
+
