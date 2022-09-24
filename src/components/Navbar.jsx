@@ -42,14 +42,14 @@ const Navbar = () => {
   return (
 
 
-    <nav className='text-white w-max transform translate-x-[-50%] left-[50%]  items-center bg-black-gradient border  z-[2] fixed  bottom-[32px]  gap-2 rounded-[38px]  flex'>
+    <nav className='text-white w-max transform translate-x-[-50%] left-[50%]  items-center bg-black-gradient border  z-[2] fixed  bottom-[32px]  gap-2 rounded-[38px] flex'>
 
         
-      <ul className='list-none flex justify-end items-center p-1  md:px-9 md:py-2'>
+      <ul className='list-none flex justify-end items-center p-1  md:px-9 md:py-2 px-0 py-0'>
         {
           links.map(({id,link,attr}) => {
             return(
-              <li   key={id} className={`font-normal cursor-pointer text-xl text-gray-200  mx-1  ${link.length === id - 1 ? "mr-0" : "mr-8"} hover:bg-black-gradient  p-[13px] rounded-[50%]`}>
+              <li   key={id} className={`font-normal cursor-pointer text-xl text-gray-200  mx-1  ${link.length === id - 1 ? "mr-0" : "md:mr-8 mr-5"} hover:bg-black-gradient  p-[13px] rounded-[50%]`}>
                 <Link activeClass="active" to={attr} spy={true} smooth={true} duration={500}>{link}</Link>
          
               </li>
