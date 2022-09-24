@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className='text-white w-max transform translate-x-[-50%] left-[50%]  items-center bg-black-gradient border  z-[2] fixed  bottom-[32px]  gap-2 rounded-[38px] flex'>
 
         
-      <ul className='list-none flex justify-end items-center p-1  md:px-9 md:py-2 px-0 py-0'>
+      <ul className='list-none flex justify-end items-center p-1  md:px-9 md:py-2 '>
         {
           links.map(({id,link,attr}) => {
             return(
