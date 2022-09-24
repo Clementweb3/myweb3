@@ -46,7 +46,7 @@ const Contact = () => {
                         <h2 className={`lg:text-2xl sm:text-xl text-[16px] md:px-0 pl-4 font-bold text-center ${id === 2 ? "text-gradient" : "text-white"} ${id === 4 ? "text-gradient" : "text-white"}`}>{invite}</h2>
                         
                       </div>
-                      <a target="_blank" rel="noreferrer" className="bg-blue-gradient hover:scale-110 transition text-black rounded-lg p-3 mr-6  cursor-pointer" href={link}>{logo}</a>
+                      <a target="_blank" rel="noreferrer" className="bg-blue-gradient hover:scale-110 transition text-black rounded-lg p-3 mr-6 md:mr-0 cursor-pointer" href={link}>{logo}</a>
                     </div>
 
                   )
