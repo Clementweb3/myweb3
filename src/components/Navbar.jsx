@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
 
 
-    <nav className='text-white md:w-max md:transform md:translate-x-[-50%] md:left-[50%]  items-center  bg-black-gradient border  z-[2] right-0  fixed  md:bottom-[32px]  gap-2 md:rounded-[38px]  md:flex  '>
+    <nav className='text-white md:w-max md:transform md:translate-x-[-50%] md:left-[50%]  items-center  bg-black-gradient border  z-[2]  m-2 md:m-0 right-0 fixed  md:bottom-[32px]  gap-2 md:rounded-[38px]  md:flex  '>
 
         
       <ul className='list-none md:flex hidden  md:justify-end md:items-center md:p-1  md:px-9 md:py-2 '>
@@ -60,7 +60,7 @@ const Navbar = () => {
       </ul>
         
       <div onClick={toggleNav} className="block md:hidden">
-        {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/> }
+        {nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25}/> }
     
       </div>
 
