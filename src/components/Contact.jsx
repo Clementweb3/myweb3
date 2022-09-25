@@ -32,7 +32,7 @@ const Contact = () => {
   ]
 
   return (
-    <div id='Contact' className='text-white h-screen sm:h-full sm:mb-[200px] mb-[100px]  w-full  mt-[100px]'>
+    <div id='Contact' className='text-white h-screen sm:h-full sm:mb-[200px] w-full  mt-[100px]'>
       <div className="max-w-screen-lg flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6 mx-auto w-full ">
      
         <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold  mb-9 border-b-4 py-2 border-gray-500 leading-9 w-full ">Contact</h1> 

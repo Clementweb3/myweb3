@@ -11,15 +11,15 @@ const Hero = () => {
   return (
     <div id='Hero' name="Hero" className="text-slate-200  mt-[80px] lg:h-screen w-full ">
       <div className={`${style.container} relative `}>
-        <div className="flex flex-col justify-center h-full w-full md:pl-5">
-          <h2 className="sm:text-[45px] lg:text-6xl text-3xl text-white md:leading-[75px] font-semibold py-3 ">Hello<span className='text-gradient'> Web3 </span> Citizens</h2>
+        <div className="md:flex flex-col justify-center h-full w-full md:pl-5">
+          <h2 className="sm:text-[45px] lg:text-6xl text-[32px] text-white md:leading-[75px] font-semibold py-1  ">Hello<span className='text-gradient'> Web3 </span> Citizens</h2>
           <Typed
-          className='sm:text-4xl lg:text-5xl  text-[28px] font-semibold '
+          className='sm:text-4xl lg:text-5xl  text-[29px] font-semibold '
            strings={["I am Clement Fanai"]} typeSpeed={120}
           backSpeed={140}
           loop
           />
-          <p className="text-gray-300 lg:text-3xl  text-2xl mt-5 ">Nice to meet you all. <br className='sm:block hidden' /></p>
+          <p className="text-gray-300 lg:text-3xl  text-2xl mt-5 ">Nice to meet you all.</p>
 
           <div className='md:flex sm:flex-col mt-10'>
 

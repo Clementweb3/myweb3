@@ -51,18 +51,6 @@ body{
 
   
 
-  --circle-grad: 
-  radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #defaf9 0.89%,
-    #bef5f0 17.23%,
-    #8cf6fa 42.04%,
-    #6bf2fc 55.12%,
-    #3bf5ec 71.54%,
-    #01dfef 100%
-  );
-  ;
-
 }
 
 * {
@@ -121,7 +109,7 @@ body{
 }
 
 
-nav li{
+.navstyle{
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
@@ -130,8 +118,8 @@ nav li{
   
 }
 
-nav li:hover,
-nav li:active{
+.navstyle:hover,
+.navstyle:active{
   background: var(--blue-gradient);
   color:black;
 }
