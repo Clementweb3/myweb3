@@ -66,7 +66,7 @@ const Portfolio = () => {
 
   
          
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-9 sm:px-0 mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-9 sm:px-0 mx-auto md:w-full w-[80%]">
             {
             datas.map(({id,image,text})=> {
               return(
