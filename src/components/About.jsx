@@ -7,32 +7,32 @@ const About = () => {
     {
       id:1,
       skills:"Tailwind",
-      width:"w-[36%]",
-      percent:"36%"
+      width:"w-[33%]",
+      percent:"33%"
     },
     {
       id:2,
       skills:"Blender",
-      width:"w-[40%]",
-      percent:"40%"
+      width:"w-[30%]",
+      percent:"30%"
     },
     {
       id:3,
       skills:"Javascript",
-      width:"w-[40%]",
-      percent:"40%"
+      width:"w-[20%]",
+      percent:"20%"
     },
     {
       id:4,
       skills:"React",
-      width:"w-[35%]",
-      percent:"35%"
+      width:"w-[15%]",
+      percent:"15%"
     },
     {
       id:5,
       skills:"Solidity",
-      width:"w-[30%]",
-      percent:"30%"
+      width:"w-[10%]",
+      percent:"10%"
     }
   ]
 
